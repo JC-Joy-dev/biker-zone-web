@@ -92,7 +92,7 @@ a {
   padding: 70px 0 96px 0;
   gap: 65px;
 }
-.banner-container, .banner-content, .banner-pic{
+.banner-container > .banner-content, .banner-pic{
   flex: 1;
   width: calc( 100% - 65px);
 }
@@ -145,6 +145,11 @@ a {
     padding: 0;
     text-align: center;
   }
+  .banner-container > .banner-content, .banner-pic {
+    flex: 1;
+    width: calc( 100% - 65px);
+    margin: 0 auto;
+}
   .banner-content .banner-des {
     font-size: 0.7rem;
   }
