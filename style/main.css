@@ -110,6 +110,14 @@ a {
 .banner-pic {
   flex: 1;
   width: calc(100% - 65px);
+ position: relative;
+ z-index: 222;
+}
+.position-play{
+  position: absolute;
+  top: 35px;
+  right: 0;
+  z-index: -222;
 }
 .banner-content {
   padding: 60px 0 145px 0;
