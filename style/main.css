@@ -71,6 +71,9 @@ a {
   font-size: 3rem;
   font-weight: 600;
 }
+.d-ld-hide {
+  display: none;
+}
 /* Common-CSS */
 /* Header-Part-Start */
 #head {
@@ -189,18 +192,18 @@ a {
 }
 /* Latest-Part-End */
 /* Happy-Client-Part-Start */
-#happy-client-part{
+#happy-client-part {
   margin: 160px 0;
 }
-.client-tittle span{
-  color: #E76F51;
+.client-tittle span {
+  color: #e76f51;
 }
 
-.clint-grid{
+.clint-grid {
   margin-top: 52px;
   gap: 40px;
 }
-.client-card{
+.client-card {
   padding: 40px 35px;
   box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
@@ -210,11 +213,12 @@ a {
   width: 150px;
   margin: 0 auto 30px auto;
 }
-.client-card-content p{
+.client-card-content p {
   font-size: 1rem;
   font-weight: 400;
 }
-.client-card-content h5, h6{
+.client-card-content h5,
+h6 {
   font-size: 0.875rem;
   font-weight: 600;
   margin: 15px;
@@ -228,13 +232,55 @@ a {
   grid-template-rows: repeat(1, 22px);
   margin-top: 15px;
 }
-.blu{
-  color: #23A6F0;
+.blu {
+  color: #23a6f0;
 }
-.bri{
-  color: #252B42;
+.bri {
+  color: #252b42;
 }
 /* Happy-Client-Part-End */
+/* Footer-Part-Start */
+#last {
+  background: #0b0d17;
+  padding: 56px 0 84px 0;
+}
+.simple-menu-list {
+  margin-top: 10px;
+}
+.footer-menu .simple-menu a,
+.simple-menu-list .last-item a{
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+}
+.simple-menu a{
+  margin-right: 24px;
+}
+.simple-menu-list .last-item{
+  margin-right: 24px;
+}
+.footer-menu h5 {
+  font-size: 0.875rem;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 24px;
+}
+.footer-flex {
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-app h3 {
+  font-size: 1.125rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.apps {
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+/* Footer-Part-End */
 /* Responsive-Start */
 /* Responsive-For-Small-Device */
 @media screen and (max-width: 576px) {
@@ -300,14 +346,48 @@ a {
     border: 1px solid rgb(192 192 192 / 44%);
     padding: 10px;
   }
-  .container-pad{
+  .container-pad {
     padding: 0 15px;
   }
   .client-tittle {
     padding: 0 50px;
-}
+  }
   .clint-grid {
     gap: 20px;
     padding: 0 20px;
+  }
+  /* Footer-Part */
+  #last {
+    padding-bottom: 42px;
 }
+  .footer-container {
+    padding: 20px 20px 0 20px;
+  }
+  .footer-container h5 {
+    font-size: 0.875rem;
+    color: #fff;
+    font-weight: 400;
+  }
+  .footer-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .simple-menu-list #last-menu {
+    flex-wrap: wrap;
+  max-width: 255px;
+}
+.last-item2{
+  /* margin-right: 20px; */
+  margin-top: 20px;
+}
+  .footer-app {
+    margin-bottom: 50px;
+    margin-top: 60px;
+  }
+  .d-sm-block {
+    display: block;
+  }
+  .d-sm-hide {
+    display: none;
+  }
 }
