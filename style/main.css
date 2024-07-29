@@ -18,6 +18,9 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+.line {
+  line-height: 0;
+}
 /* Common-CSS */
 * {
   margin: 0;
@@ -45,20 +48,28 @@ a {
   background: #e76f51;
   margin-left: 66px;
 }
+.t-center {
+  text-align: center;
+}
 .display-flex {
   display: flex;
 }
 .img-fluid {
   width: 100%;
 }
-.conatiner {
+.container {
   max-width: 1100px;
+  margin: 0 auto;
 }
 .c-w {
   color: #fff;
 }
 .light-gray {
   color: #e0e0e0;
+}
+.brand-tittle {
+  font-size: 3rem;
+  font-weight: 600;
 }
 /* Common-CSS */
 /* Header-Part-Start */
@@ -92,9 +103,10 @@ a {
   padding: 70px 0 96px 0;
   gap: 65px;
 }
-.banner-container > .banner-content, .banner-pic{
+.banner-container > .banner-content,
+.banner-pic {
   flex: 1;
-  width: calc( 100% - 65px);
+  width: calc(100% - 65px);
 }
 .banner-content {
   padding: 60px 0 145px 0;
@@ -102,10 +114,6 @@ a {
 .banner-content .banner-des {
   font-size: 0.875rem;
   font-weight: 300;
-}
-.banner-brand {
-  font-size: 3rem;
-  font-weight: 600;
 }
 .banner-des2 {
   font-size: 1rem;
@@ -115,9 +123,74 @@ a {
 .banner-btn {
   margin: 0;
 }
+
+/* New-Year-Collection */
+#new-year-section {
+  padding: 65px 0 165px 0;
+}
+.new-yr-des {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #e76f51;
+}
+.new-year-collection {
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 140px;
+}
+.collection-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #264653;
+  margin-top: 20px;
+}
+.collection-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #264653;
+  margin: 30px 0;
+}
+
+/* Latest-Part-Start */
+.latest-card {
+  padding: 20px;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 47px;
+}
+.card-content-tittle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #18191f;
+  margin-top: 30px;
+}
+.card-content-des {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6c6c6c;
+  margin: 10px 0 40px 0;
+  line-height: 20px;
+}
+.card-content-btn {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #e76f51;
+  border: 1px solid #e76f51;
+  border-radius: 5px;
+  padding: 15px;
+  background: #fff;
+}
+/* Latest-Part-End */
 /* Responsive-Start */
 /* Responsive-For-Small-Device */
 @media screen and (max-width: 576px) {
+  /* Header-Part-Start */
   .navbar,
   .menu {
     padding: 0;
@@ -135,7 +208,8 @@ a {
   .btn-primary {
     margin-left: 0;
   }
-  /* Banner */
+  /* Header-Part-End */
+  /* Banner-Part-Start */
   .banner-container {
     margin-top: 100px;
     flex-direction: column;
@@ -145,11 +219,12 @@ a {
     padding: 0;
     text-align: center;
   }
-  .banner-container > .banner-content, .banner-pic {
+  .banner-container > .banner-content,
+  .banner-pic {
     flex: 1;
-    width: calc( 100% - 65px);
+    width: calc(100% - 65px);
     margin: 0 auto;
-}
+  }
   .banner-content .banner-des {
     font-size: 0.7rem;
   }
@@ -164,5 +239,20 @@ a {
     font-size: 1rem;
     font-weight: 400;
   }
+  /* New-Year-Collection-Part-Start */
+  .new-year-collection {
+    padding: 0 65px;
+    gap: 30px;
+  }
+  .new-year-collection,
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .collection {
+    border: 1px solid rgb(192 192 192 / 44%);
+    padding: 10px;
+  }
+  .container-pad{
+    padding: 0 15px;
+  }
 }
-/* Header-Part-End */
